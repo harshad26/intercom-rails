@@ -164,6 +164,8 @@ module IntercomRails
         '#IntercomDefaultWidget'
       when :custom
         custom_activator || '#Intercom'
+      when :none, false
+        nil
       else
         nil
       end

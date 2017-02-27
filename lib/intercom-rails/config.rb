@@ -137,7 +137,7 @@ module IntercomRails
       config_accessor :counter # Keep this for backwards compatibility
       config_accessor :custom_activator
       config_accessor :style do |value|
-        raise ArgumentError, "inbox.style must be one of :default or :custom" unless [:default, :custom].include?(value)
+        raise ArgumentError, "inbox.style must be one of :default, :custom, :none or false" unless [:default, :custom, :none, false].include?(value)
       end
     end
 
